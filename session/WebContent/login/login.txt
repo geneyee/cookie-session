@@ -1,0 +1,12 @@
+loginForm.jsp에서 로그인 요청
+	로그인 성공 시 세션에 ID를 저장하기
+	loginSuccess.jsp - redirect
+	loginSuccess.jsp에서는 세션에 ID가 있다면 로그인 사용자 표시
+	
+로그인 되어 있는 상태에서(== 세션에 ID정보 있음)
+	loginForm.jsp 나 loginProc.jsp에 요청을 하면
+	loginSuccess.jsp로 redirect하도록 구현
+	
+loginSuccess.jsp에 로그아웃 버튼(링크)추가
+	버튼(링크)을 누르면 logout.jsp로 요청
+	logout.jsp는 세션을 무효화
